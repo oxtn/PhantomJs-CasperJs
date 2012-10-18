@@ -1,12 +1,4 @@
-﻿phantom.casperPath = 'C:\\arasmussen\\PhantomJs-CasperJs\\lib\\CasperJS';
-phantom.injectJs(phantom.casperPath + '\\bin\\bootstrap.js');
-
-var casper = require("casper").create({
-    verbose: true,
-    exitOnError: true
-});
-
-var countLinks = function () {
+﻿var countLinks = function () {
     return document.querySelectorAll('a').length;
 };
 

@@ -1,13 +1,4 @@
-﻿phantom.casperPath = 'C:\\arasmussen\\PhantomJs-CasperJs\\lib\\CasperJS';
-phantom.injectJs(phantom.casperPath + '\\bin\\bootstrap.js');
-
-var casper = require('casper').create({
-    exitOnError: false,
-    logLevel: "info",
-    verbose: true
-});
-
-casper.on('http.status.404', function (resource) {
+﻿casper.on('http.status.404', function (resource) {
     this.test.fail('URL encountered a 404 response: ' + resource.url);
 });
 
@@ -18,7 +9,7 @@ casper.on('http.status.500', function (resource) {
 casper.start();
 
 // Will fail
-casper.thenOpen('http://localhost:3852/500.aspx');
+//casper.thenOpen('http://localhost:3852/500.aspx');
 
 casper.thenOpen('http://localhost:3852/Form.aspx', function () {
     this.fill('form#form1', {
