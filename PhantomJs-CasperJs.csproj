@@ -73,7 +73,9 @@
     <None Include="lib\CasperJS\tests\suites\casper\flow.coffee" />
     <None Include="lib\CasperJS\tests\suites\casper\resources.coffee" />
     <None Include="lib\CasperJS\tests\suites\coffee.coffee" />
+    <Content Include="lib\RunPhantomRunner.bat" />
     <None Include="lib\PhantomRunner.bat" />
+    <Content Include="Test\Copy of WebTests.js" />
     <Content Include="Web.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -172,7 +174,6 @@
     <Content Include="Test\_Directs\ReadyTouch.js" />
     <Content Include="Test\include\jquery.js" />
     <Content Include="Test\include\underscore.js" />
-    <Content Include="Test\RandomTests.js" />
     <Content Include="Test\WebTests.js" />
     <Content Include="Test\_CasperRunner.js" />
   </ItemGroup>

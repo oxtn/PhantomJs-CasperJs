@@ -9,7 +9,7 @@ casper.on('http.status.500', function (resource) {
 casper.start();
 
 // Will fail
-//casper.thenOpen('http://localhost:3852/500.aspx');
+casper.thenOpen('http://localhost:3852/500.aspx');
 
 casper.thenOpen('http://localhost:3852/Form.aspx', function () {
     this.fill('form#form1', {

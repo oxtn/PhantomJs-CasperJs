@@ -7,12 +7,12 @@ phantom.injectJs(phantom.casperPath + '\\bin\\bootstrap.js');
 
 var casper = require('casper').create({
     clientScripts: ['include/jquery.js'], //, 'include/underscore.js'],
-    verbose: false,
+    verbose: true,
     logLevel: "info"
     
 });
 
-console.log();
+console.log('');
 console.log('[Start Test] ' + phantom.args[1]);
 
 // Skip the casperPath
