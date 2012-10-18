@@ -1,4 +1,4 @@
-﻿phantom.casperPath = 'C:\\arasmussen\\PhantomGit\\lib\\CasperJS';
+﻿phantom.casperPath = 'C:\\arasmussen\\PhantomJs-CasperJs\\lib\\CasperJS';
 phantom.injectJs(phantom.casperPath + '\\bin\\bootstrap.js');
 
 var casper = require("casper").create({

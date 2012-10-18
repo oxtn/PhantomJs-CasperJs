@@ -12,6 +12,9 @@ var casper = require('casper').create({
     
 });
 
+console.log();
+console.log('[Start Test] ' + phantom.args[1]);
+
 // Skip the casperPath
 for (var i = 1; i < phantom.args.length; i++) {
     phantom.injectJs(phantom.args[i]);

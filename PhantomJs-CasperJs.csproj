@@ -19,6 +19,10 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -164,8 +168,8 @@
     <Content Include="lib\CasperJS\tests\testdir\04\02_do.js" />
     <Content Include="lib\PhantomJS\phantomjs.exe" />
     <Content Include="Session.aspx" />
-    <Content Include="Test\Directs\PlaceAndVerifyChairOrder.js" />
-    <Content Include="Test\Directs\ReadyTouch.js" />
+    <Content Include="Test\_Directs\PlaceAndVerifyChairOrder.js" />
+    <Content Include="Test\_Directs\ReadyTouch.js" />
     <Content Include="Test\include\jquery.js" />
     <Content Include="Test\include\underscore.js" />
     <Content Include="Test\RandomTests.js" />
