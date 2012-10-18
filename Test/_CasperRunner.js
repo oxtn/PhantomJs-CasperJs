@@ -19,3 +19,7 @@ console.log('[Start Test] ' + phantom.args[1]);
 for (var i = 1; i < phantom.args.length; i++) {
     phantom.injectJs(phantom.args[i]);
 }
+
+casper.run(function () {
+    this.test.renderResults(true, this.test.testResults.failed);
+});
