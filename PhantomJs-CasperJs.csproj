@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6D947778-E184-4110-8C80-0876426C6C19}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CasperJs</RootNamespace>
+    <AssemblyName>CasperJs</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lib\CasperJS\.travis.yml" />
+    <None Include="lib\CasperJS\bin\casperjs" />
+    <None Include="lib\CasperJS\casperjs.gemspec" />
+    <None Include="lib\CasperJS\CHANGELOG.md" />
+    <None Include="lib\CasperJS\CONTRIBUTING.md" />
+    <None Include="lib\CasperJS\LICENSE.md" />
+    <None Include="lib\CasperJS\package.json" />
+    <None Include="lib\CasperJS\README.md" />
+    <None Include="lib\CasperJS\rubybin\casperjs" />
+    <None Include="lib\CasperJS\tests\suites\casper\flow.coffee" />
+    <None Include="lib\CasperJS\tests\suites\casper\resources.coffee" />
+    <None Include="lib\CasperJS\tests\suites\coffee.coffee" />
+    <None Include="lib\PhantomRunner.bat" />
+    <Content Include="Web.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="500.aspx" />
+    <Content Include="ActivateSession.aspx" />
+    <Content Include="Form.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="lib\CasperJS\.gitignore" />
+    <Content Include="lib\CasperJS\.gitmodules" />
+    <Content Include="lib\CasperJS\bin\bootstrap.js" />
+    <Content Include="lib\CasperJS\bin\usage.txt" />
+    <Content Include="lib\CasperJS\modules\casper.js" />
+    <Content Include="lib\CasperJS\modules\cli.js" />
+    <Content Include="lib\CasperJS\modules\clientutils.js" />
+    <Content Include="lib\CasperJS\modules\colorizer.js" />
+    <Content Include="lib\CasperJS\modules\events.js" />
+    <Content Include="lib\CasperJS\modules\injector.js" />
+    <Content Include="lib\CasperJS\modules\mouse.js" />
+    <Content Include="lib\CasperJS\modules\querystring.js" />
+    <Content Include="lib\CasperJS\modules\tester.js" />
+    <Content Include="lib\CasperJS\modules\utils.js" />
+    <Content Include="lib\CasperJS\modules\vendors\coffee-script.js" />
+    <Content Include="lib\CasperJS\modules\vendors\URI.js" />
+    <Content Include="lib\CasperJS\modules\xunit.js" />
+    <Content Include="lib\CasperJS\tests\run.js" />
+    <Content Include="lib\CasperJS\tests\selftest.js" />
+    <Content Include="lib\CasperJS\tests\site\alert.html" />
+    <Content Include="lib\CasperJS\tests\site\click.html" />
+    <Content Include="lib\CasperJS\tests\site\confirm.html" />
+    <Content Include="lib\CasperJS\tests\site\elementattribute.html" />
+    <Content Include="lib\CasperJS\tests\site\error.html" />
+    <Content Include="lib\CasperJS\tests\site\form.html" />
+    <Content Include="lib\CasperJS\tests\site\global.html" />
+    <Content Include="lib\CasperJS\tests\site\images\phantom.png" />
+    <Content Include="lib\CasperJS\tests\site\index.html" />
+    <Content Include="lib\CasperJS\tests\site\mouse-events.html" />
+    <Content Include="lib\CasperJS\tests\site\multiple-forms.html" />
+    <Content Include="lib\CasperJS\tests\site\page1.html" />
+    <Content Include="lib\CasperJS\tests\site\page2.html" />
+    <Content Include="lib\CasperJS\tests\site\page3.html" />
+    <Content Include="lib\CasperJS\tests\site\prompt.html" />
+    <Content Include="lib\CasperJS\tests\site\resources.html" />
+    <Content Include="lib\CasperJS\tests\site\result.html" />
+    <Content Include="lib\CasperJS\tests\site\test.html" />
+    <Content Include="lib\CasperJS\tests\site\visible.html" />
+    <Content Include="lib\CasperJS\tests\site\waitFor.html" />
+    <Content Include="lib\CasperJS\tests\suites\casper\agent.js" />
+    <Content Include="lib\CasperJS\tests\suites\casper\capture.js" />
+    <Content Include="lib\CasperJS\tests\suites\casper\click.js" />
+    <Content Include="lib\CasperJS\tests\suites\casper\confirm.js" />
+    <Content Include="lib\CasperJS\tests\suites\casper\elementattribute.js" />
+    <Content Include="lib\CasperJS\tests\suites\casper\encode.js" />
+    <Content Include="lib\CasperJS\tests\suites\casper\evaluate.js" />
+    <Content Include="lib\CasperJS\tests\suites\casper\events.js" />
+    <Content Include="lib\CasperJS\tests\suites\casper\exists.js" />
+    <Content Include="lib\CasperJS\tests\suites\casper\fetchtext.js" />
+    <Content Include="lib\CasperJS\tests\suites\casper\formfill.js" />
+    <Content Include="lib\CasperJS\tests\suites\casper\global.js" />
+    <Content Include="lib\CasperJS\tests\suites\casper\history.js" />
+    <Content Include="lib\CasperJS\tests\suites\casper\hooks.js" />
+    <Content Include="lib\CasperJS\tests\suites\casper\logging.js" />
+    <Content Include="lib\CasperJS\tests\suites\casper\mouseevents.js" />
+    <Content Include="lib\CasperJS\tests\suites\casper\onerror.js" />
+    <Content Include="lib\CasperJS\tests\suites\casper\open.js" />
+    <Content Include="lib\CasperJS\tests\suites\casper\prompt.js" />
+    <Content Include="lib\CasperJS\tests\suites\casper\start.js" />
+    <Content Include="lib\CasperJS\tests\suites\casper\steps.js" />
+    <Content Include="lib\CasperJS\tests\suites\casper\viewport.js" />
+    <Content Include="lib\CasperJS\tests\suites\casper\visible.js" />
+    <Content Include="lib\CasperJS\tests\suites\casper\wait.js" />
+    <Content Include="lib\CasperJS\tests\suites\casper\xpath.js" />
+    <Content Include="lib\CasperJS\tests\suites\cli.js" />
+    <Content Include="lib\CasperJS\tests\suites\clientutils.js" />
+    <Content Include="lib\CasperJS\tests\suites\fs.js" />
+    <Content Include="lib\CasperJS\tests\suites\http_status.js" />
+    <Content Include="lib\CasperJS\tests\suites\injector.js" />
+    <Content Include="lib\CasperJS\tests\suites\tester.js" />
+    <Content Include="lib\CasperJS\tests\suites\utils.js" />
+    <Content Include="lib\CasperJS\tests\suites\xunit.js" />
+    <Content Include="lib\CasperJS\tests\testdir\01_a\abc.js" />
+    <Content Include="lib\CasperJS\tests\testdir\01_a\def.js" />
+    <Content Include="lib\CasperJS\tests\testdir\02_b\abc.js" />
+    <Content Include="lib\CasperJS\tests\testdir\03_a.js" />
+    <Content Include="lib\CasperJS\tests\testdir\03_b.js" />
+    <Content Include="lib\CasperJS\tests\testdir\04\01_init.js" />
+    <Content Include="lib\CasperJS\tests\testdir\04\02_do.js" />
+    <Content Include="lib\PhantomJS\phantomjs.exe" />
+    <Content Include="Session.aspx" />
+    <Content Include="Test\Directs\PlaceAndVerifyChairOrder.js" />
+    <Content Include="Test\Directs\ReadyTouch.js" />
+    <Content Include="Test\include\jquery.js" />
+    <Content Include="Test\include\underscore.js" />
+    <Content Include="Test\RandomTests.js" />
+    <Content Include="Test\WebTests.js" />
+    <Content Include="Test\_CasperRunner.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="500.aspx.cs">
+      <DependentUpon>500.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="500.aspx.designer.cs">
+      <DependentUpon>500.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ActivateSession.aspx.cs">
+      <DependentUpon>ActivateSession.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ActivateSession.aspx.designer.cs">
+      <DependentUpon>ActivateSession.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Form.aspx.cs">
+      <DependentUpon>Form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Form.aspx.designer.cs">
+      <DependentUpon>Form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Session.aspx.cs">
+      <DependentUpon>Session.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Session.aspx.designer.cs">
+      <DependentUpon>Session.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="lib\CasperJS\docs\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>3852</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
